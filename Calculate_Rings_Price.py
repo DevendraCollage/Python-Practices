@@ -10,3 +10,15 @@ def cost_of_project(engraving, solid_gold):
 
 print(cost_of_project("devendra", True)) # Output: 180
 print(cost_of_project("Hello World", True)) # Output: 210
+
+
+
+def cost_of_project(engraving, solid_gold):
+    if solid_gold == True:
+        cost = 100 + 10 * len(engraving)
+    else:
+        cost = 50 + 7 * len(engraving) 
+    return cost
+
+# Check the condition
+print(cost_of_project("08/10/2000",False)) # Output: 120
